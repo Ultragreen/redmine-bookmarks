@@ -1,0 +1,10 @@
+
+<%= error_messages_for :category %>
+<%= hidden_field_tag 'category[user_id]', User.current.id %>
+<div class="box tabular">
+<p><%= f.text_field :name, :required => true, :size => 60 %></p>
+<p><%= f.text_field :description, :size => 60 %></p>
+<p><%= f.check_box :global if User.current.admin? %><p>
+<p><%= f.check_box :admin if User.current.admin? %><p>	
+</div>
+

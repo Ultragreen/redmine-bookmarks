@@ -1,0 +1,7 @@
+<h2><%=l('bookmarks.views.edit_category.title')%></h2>
+
+<%- labelled_tabular_form_for :category, @category, :url => { :controller => 'bookmark', :action => "edit_category" }, :html => { :id => 'category-form' } do |f| -%>
+	<%= render :partial => 'bookmark/form_category', :locals => { :f => f } %>
+	<br>
+	<%= submit_tag l('bookmarks.views.edit_button'), :name => "edit", :class => "small" %>
+<% end %>

@@ -1,0 +1,8 @@
+<h2><%=l('bookmarks.views.add_link.title')%></h2>
+
+
+<%- labelled_tabular_form_for :link, @link, :url => { :controller => 'bookmark', :action => "add_link" }, :html => { :id => 'link-form' } do |f| -%>
+	<%= render :partial => 'bookmark/form_link', :locals => { :f => f } %>
+	<br>
+	<%= submit_tag l('bookmarks.views.add_button'), :name => "add", :class => "small" %>
+<% end %>

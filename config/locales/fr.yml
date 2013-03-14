@@ -1,0 +1,51 @@
+fr:
+    bookmarks_box: Mes bookmarks
+    field_global: Lien global
+    field_label: Label
+    permission_view_bookmarks: Voir les Bookmarks
+    permission_view_admin_links: Voir et utiliser les liens d'admistrateur
+    permission_view_admin_categories: Voir et utiliser les catégories d'administrateur
+    permission_add_global_links: Ajouter des liens globaux 
+    permission_edit_global_links: Editer des liens globaux
+    permission_remove_global_links: Supprimer des liens globaux
+    permission_add_global_categories: Ajouter des catégories globales
+    permission_edit_global_categories: Editer des catégories globales
+    permission_remove_global_categories: Supprimer des catégories globales
+    bookmarks:
+        views:
+            view_categories:
+                title: Gestion des catégories pour le bookmark de ma page
+                return_index: Retour aux liens
+            index:
+                title: Gestion des liens pour le bookmark de ma page
+                add_link: Ajouter un lien
+                add_category: Ajouter une catégorie
+                view_categories: Voir les catégories
+            link:
+                label: Texte d'affichage du lien
+                url: URL
+                category: Catégorie
+                description: Description
+                global: Lien global
+                admin: Lien admin
+                created_on: Date de création
+                updated_on: Date de mise-à-jour
+                user: Utilisateur
+            category:
+                name: Nom de la catégorie
+                description: Description
+                global: 'cat. global'
+                admin: 'cat. admin'
+                created_on: Date de création
+                updated_on: Date de mise-à-jour
+                user: Utilisateur
+            add_link:
+                title: Ajouter un lien
+            edit_link:
+                title: Editer un lien
+            add_button: Ajouter 
+            edit_button: Editer
+            add_category:
+                title: Ajouter une catégorie
+            edit_category:
+                title: Editer une catégorie    

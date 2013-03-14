@@ -1,0 +1,51 @@
+en:
+    bookmarks_box: Bookmarks Box
+    field_global: Global link
+    field_label: Label
+    permission_view_bookmarks: View Bookmarks
+    permission_view_admin_links: View and use admin links
+    permission_view_admin_categories: view and use admin categories
+    permission_add_global_links: Add global links
+    permission_edit_global_links: Edit global links
+    permission_remove_global_links: Remove global links
+    permission_add_global_categories: Add global categories
+    permission_edit_global_categories: Edit global categories
+    permission_remove_global_categories: Remove global categories
+    bookmarks:
+        views:
+            view_categories:
+                title: Index of categories for my page bookmark
+                return_index: return to links
+            index:
+                title: Links manager for my page bookmark
+                add_link: Add a link
+                add_category: Add a category
+                view_categories: View categories
+            link:
+                label: Label
+                url: URL
+                category: Category
+                description: Description
+                global: Global link
+                admin: Admin Only Link
+                created_on: Creation date
+                updated_on: Updating date
+                user: User
+            category:
+                name: Name of the category
+                description: Description
+                global: Global cat.
+                admin: Admin cat.
+                created_on: Creation date
+                updated_on: Updating date
+                user: User
+            add_link:
+                title: Adding a link
+            edit_link:
+                    title: Edit a link
+            add_button: Add
+            edit_button: Edit
+            add_category:
+                title: Adding a category
+            edit_category:
+                    title: Edit a category

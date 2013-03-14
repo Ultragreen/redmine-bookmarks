@@ -1,0 +1,11 @@
+
+<%= error_messages_for :link %>
+<div class="box tabular">
+<%= hidden_field_tag 'link[user_id]', User.current.id %>
+<p><%= f.text_field :label, :required => true, :size => 60 %></p>
+<p><%= f.text_field :url, :required => true, :size => 60 %></p>
+<p><%= f.text_field :description, :size => 60 %></p>
+<p><%= f.select :category_id, Category.all.collect {|c| [ c.name, c.id ] }, { :include_blank => true } %></p>
+<p><%= f.check_box :global if User.current.admin? %><p>
+<p><%= f.check_box :admin if User.current.admin? %><p>
+</div>

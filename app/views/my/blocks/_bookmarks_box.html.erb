@@ -1,0 +1,27 @@
+<h2><%= l('bookmarks_box')%></h2>
+<% Category.find(:all).each do |cat|%>
+<div class="wiki">
+<h3><%= cat.name %>	</h3>
+<i><small><%= cat.description %></small></i>
+<ul><% Link.find(:all, :conditions => "category_id = #{cat.id}").each do |link|%>
+	
+	<% if link.user.id == User.current.id or link.is_global? then%>
+		<% if User.current.admin? or !link.admin_only? then %>
+			<% if (link.admin_only?) then %>
+		 		<li class="icon icon-admin"> 
+			<% elsif (link.is_global?) then %>
+				<li class="icon icon-global">
+			<% else %>
+				<li class="icon icon-std">
+			<% end %>
+			<%= link.label %> <%= link_to link.url,link.url %>&nbsp;<br><i><small><%= link.description %></small></i></li>
+		<% end %>
+	<% end %>
+<% end %>
+<ul>
+</div>
+<% end %>
+
+<% content_for :header_tags do %>
+  <%= stylesheet_link_tag "bookmarks.css", :plugin => "redmine_bookmarks", :media => "screen" %>
+<% end %>
